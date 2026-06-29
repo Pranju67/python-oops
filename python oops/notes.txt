@@ -1,0 +1,37 @@
+constructor-> All classes have a function called __init__(), which is always executed when the obj is being initiated(obj is called ).
+self parameter-> reference of created obj. It points to obj. Used to access variables that belongs to class
+attributes -> data/variables stored inside class or obj
+NOTE: Data of each object is different it is defined by (self.)
+Class attribute -> common things for object had been made class attribute ex: clg name
+                   It can be accessed by Class.attr  (classname.attribute name)
+
+Obj attr -> self.name = name
+
+Methods -> Methods are functions in the class 
+
+Static methods 
+Methods that dont use the self parameter (work at class level)
+ex:
+class Student:
+ @staticmethod  # decorator
+ def college():
+   print ("ABC college)
+Decorators -> It allow us to wrap another function in order to extend the behaviour of the wrapped function,without permanently modifying it
+
+Inheitance 
+single level -> class car and toyota car(inherit car )
+multi level inheritance -> class car, toyota car(inherit car), fortuner(inherit car and toyota car)
+multiple inheritance -> 2 parent class from which one child class is derived.
+
+Super methods
+super() method is used to access methods of the parent class.
+
+
+class method -> It is used to bound to the class & receives the class as an implicit first argument
+Note -> static method cant access or modify class state & generally for utility
+
+
+Types of classes
+@staticmethod -> not using any property of class then it is used 
+@classmethod (cls) -> when we want to modify class attributes
+instance method (self) -> when we want to use instance attributes
